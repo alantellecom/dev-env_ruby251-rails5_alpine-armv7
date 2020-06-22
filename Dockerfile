@@ -6,6 +6,6 @@ RUN apk add build-base nodejs yarn tzdata sqlite-dev postgresql-client postgresq
 RUN gem install bundler
 RUN gem install rails -v '5.2.3'
 
-RUN mkdir -p /myapp
+RUN mkdir /myapp
 RUN chmod -R 777 /myapp
 WORKDIR /myapp
